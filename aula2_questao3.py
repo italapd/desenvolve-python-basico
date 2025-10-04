@@ -1,0 +1,12 @@
+# Aula 2.2 - Tipos de Dados - Questão 3
+# Nome: Ítala Maria Torres Bersan Sena
+
+v1 = 10
+v2 = 20
+
+aux = v1
+v1 = v2
+v2 = aux
+
+print(v1)
+print(v2)
