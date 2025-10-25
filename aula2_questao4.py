@@ -1,12 +1,17 @@
-# Aula 2.2 - Tipos de Dados - Questão 4
-# Nome: Ítala Maria Torres Bersan Sena
+# Lê os dados do personagem
+classe = input("Escolha a classe (guerreiro, mago ou arqueiro): ").lower()
+forca = int(input("Digite os pontos de força (de 1 a 20): "))
+magia = int(input("Digite os pontos de magia (de 1 a 20): "))
 
-saldo = 500.0
-juros = 1.01
+# Verifica consistência com base na classe
+if classe == "guerreiro":
+    consistente = forca >= 15 and magia <= 10
+elif classe == "mago":
+    consistente = forca <= 10 and magia >= 15
+elif classe == "arqueiro":
+    consistente = (forca > 5 and magia > 5) and (forca <= 15 and magia <= 15)
+else:
+    consistente = False
 
-saldo = saldo * juros
-saldo = saldo * juros
-saldo = saldo * juros
-
-print("Após 3 meses meu novo saldo é")
-print(saldo)
+# Exibe o resultado
+print("Pontos de atributo consistentes com a classe escolhida:", consistente)

@@ -1,13 +1,9 @@
-# Aula 2.2 - Tipos de Dados - Questão 1
-# Nome: Ítala Maria Torres Bersan Sena
+# Lê as idades de Juliana e Cris
+idade_juliana = int(input("Digite a idade de Juliana: "))
+idade_cris = int(input("Digite a idade de Cris: "))
 
-a = 5
-b = 2
+# Verifica se ambas são maiores de 17 anos
+pode_entrar = idade_juliana > 17 and idade_cris > 17
 
-print(type(a))
-print(type(b))
-
-c = a / b
-
-print(c)
-print(type(c))
+# Exibe o resultado
+print(pode_entrar)
